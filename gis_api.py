@@ -55,3 +55,5 @@ def get_heatmap():
     d_type = request.args.get('disaster_type', 'flood')
     data = gis.get_risk_heatmap_data(d_type)
     return jsonify({"success": True, "heatmap": data})
+
+# 2026-01-02 18:34:39 weather data integration
