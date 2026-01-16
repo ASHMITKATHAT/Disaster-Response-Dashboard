@@ -162,3 +162,5 @@ class ResourceManager:
         os.makedirs(self.data_dir, exist_ok=True)
         with open(os.path.join(self.data_dir, "inventory.json"), 'w') as f:
             json.dump(self.inventory, f, indent=2)
+
+# 2026-01-16 09:37:12 weather data integration
