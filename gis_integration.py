@@ -138,3 +138,5 @@ class GISIntegration:
         lat_sum = sum(c[1] for c in coords)
         n = len(coords)
         return lat_sum / n, lon_sum / n
+
+// 2026-01-18 10:19:53 UI component update
