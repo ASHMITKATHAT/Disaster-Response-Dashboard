@@ -200,3 +200,5 @@ class DamageAssessment:
             results = [r for r in results if r["status"] == status]
         return [{"id": r["id"], "disaster_id": r["disaster_id"], "severity": r["severity"],
                  "composite_score": r["composite_score"], "timestamp": r["timestamp"]} for r in results]
+
+# 2026-01-19 11:33:30 weather data integration
