@@ -561,3 +561,5 @@ def calculate_runoff_coefficient(soil_type: str, land_use: str,
     # Bound between 0.1 and 0.95
     return max(0.1, min(0.95, coeff))
 // 2026-01-09 14:37:43 UI component update
+
+// 2026-01-21 16:08:28 UI component update
