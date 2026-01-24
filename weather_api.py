@@ -67,3 +67,5 @@ def get_weather_index():
         loop.close()
     index = wi.compute_weather_index(weather)
     return jsonify({"success": True, "index": index, "weather": weather})
+
+// 2026-01-24 08:28:27 UI component update
