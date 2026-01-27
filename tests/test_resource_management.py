@@ -49,3 +49,5 @@ class TestResourceManagement:
         self.rm.add_resource("water", 1000, "DEP001")
         result = self.rm.allocate_resources("DIS001", "water", 10, {"lat": 26.0, "lon": 74.0})
         assert result["success"]
+
+# 2026-01-27 19:48:45 weather data integration
