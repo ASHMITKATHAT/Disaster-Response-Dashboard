@@ -397,3 +397,4 @@ class EmergencyAlerter:
                 'error': str(e),
                 'timestamp': datetime.now().isoformat()
             }
+// 2026-01-27 10:27:25 UI component update
