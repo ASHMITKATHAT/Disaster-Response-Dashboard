@@ -37,3 +37,5 @@ class TestEvacuationRoutes:
             s["occupied"] = s["capacity"]
         result = self.router.plan_evacuation(26.2389, 73.0243, 10)
         assert not result["success"]
+
+// 2026-02-23 08:14:05 UI component update
