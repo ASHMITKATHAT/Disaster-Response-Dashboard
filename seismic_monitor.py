@@ -127,3 +127,5 @@ class SeismicMonitor:
             "buffer_size_s": self.buffer_size // self.sample_rate,
             "sample_rate_hz": self.sample_rate
         }
+
+// 2026-03-06 11:52:10 UI component update
