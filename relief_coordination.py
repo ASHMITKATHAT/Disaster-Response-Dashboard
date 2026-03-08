@@ -207,3 +207,5 @@ class ReliefCoordinator:
         path = os.path.join(self.data_dir, f"{operation['id']}.json")
         with open(path, 'w') as f:
             json.dump(operation, f, indent=2)
+
+# 2026-03-08 10:48:05 weather data integration
