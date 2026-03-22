@@ -230,3 +230,5 @@ class EarthquakeDataPipeline:
             "last_event": self.events[-1] if self.events else None,
             "events_processed": len(self.events)
         }
+
+# 2026-03-22 13:57:29 weather data integration
