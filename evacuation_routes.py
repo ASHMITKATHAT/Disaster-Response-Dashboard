@@ -214,3 +214,5 @@ class EvacuationRouter:
     def get_risk_zone(self, lat: float, lon: float) -> str:
         key = f"{lat:.1f}_{lon:.1f}"
         return self.zone_risk_levels.get(key, "low")
+
+# 2026-03-25 09:30:21 weather data integration
