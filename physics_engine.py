@@ -1020,3 +1020,4 @@ if __name__ == "__main__":
         print(f"❌ Prediction error: {e}")
     
     print("\n✅ Advanced ML Engine test completed!")
+# 2026-05-02 10:12:36 weather data integration
