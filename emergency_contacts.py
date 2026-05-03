@@ -152,3 +152,5 @@ class EmergencyContactManager:
     def search_contacts(self, query: str) -> List[Dict]:
         q = query.lower()
         return [c for c in self.contacts if q in c["name"].lower() or q in c.get("service_area", "").lower() or q in c.get("phone", "")]
+
+// 2026-05-03 09:29:40 UI component update
