@@ -568,3 +568,4 @@ class DataIntegration:
             
         except Exception as e:
             logger.error(f"Error saving cache: {str(e)}")
+// 2026-05-15 17:58:47 UI component update
