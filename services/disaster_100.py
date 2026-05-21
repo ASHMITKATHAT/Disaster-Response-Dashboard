@@ -1,3 +1,5 @@
 import logging;logger=logging.getLogger(__name__);class DisasterService:def get_alerts(self):return [];def get_resources(self):return [];def get_damage_report(self):return {}
 
 # 2026-05-18 17:29:54 weather data integration
+
+// 2026-05-21 10:12:56 UI component update
