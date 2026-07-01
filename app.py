@@ -11,10 +11,14 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import joblib
 from pathlib import Path
+from extended_api import register_extended_routes
 
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
+
+# Register extended API routes (v2)
+register_extended_routes(app)
 
 # Configuration
 MODELS_DIR = Path("backend/models")
@@ -435,11 +439,13 @@ if __name__ == '__main__':
     print(f"📁 Models loaded: {ml_model is not None}")
     print(f"🌐 API running at: http://localhost:5000")
     print("📋 Available endpoints:")
-    print("  GET  /api/health        - Health check")
-    print("  GET  /api/villages      - Get all villages")
-    print("  POST /api/predict       - Predict flood depth")
-    print("  POST /api/alerts        - Create alert")
-    print("  GET  /api/system/status - System metrics")
+    print("  GET  /api/health              - Health check")
+    print("  GET  /api/villages            - Get all villages")
+    print("  POST /api/predict             - Predict flood depth")
+    print("  POST /api/alerts              - Create alert")
+    print("  GET  /api/system/status       - System metrics")
+    print("  GET  /api/v2/health           - V2 Health (seismic, relief, weather, GIS)")
+    print("  GET  /api/v2/dashboard        - V2 Dashboard overview")
     
     app.run(
         host='0.0.0.0',
